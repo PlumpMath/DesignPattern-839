@@ -1,4 +1,4 @@
-package SimpleFactory;
+package SimpleFactoryPattern;
 
 public class SouthPizza extends Pizza{
 

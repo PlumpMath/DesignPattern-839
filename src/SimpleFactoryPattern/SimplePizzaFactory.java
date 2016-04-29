@@ -1,4 +1,4 @@
-package SimpleFactory;
+package SimpleFactoryPattern;
 
 public class SimplePizzaFactory {
 	private static Pizza pizza = null;

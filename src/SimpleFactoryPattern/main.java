@@ -1,4 +1,4 @@
-package SimpleFactory;
+package SimpleFactoryPattern;
 
 //SimpleFactory 相当于是封装创建，和封装创建的变化。
 public class main {
