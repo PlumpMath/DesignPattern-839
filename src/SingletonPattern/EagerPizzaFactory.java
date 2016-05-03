@@ -1,10 +1,9 @@
 package SingletonPattern;
 
-public class PizzaFactory {
-	private static IPizza iPizza = null;
+public class EagerPizzaFactory {
+	private static IPizza iPizza = new PizzaImpl();
 	
-	private PizzaFactory() {
-	}
+	private EagerPizzaFactory() {}
 	
 	public static IPizza getInstance() {
 		if (iPizza == null) {
@@ -12,4 +11,5 @@ public class PizzaFactory {
 		}
 		return iPizza;
 	}
+	
 }
