@@ -3,7 +3,7 @@ package ObserverPattern;
 import java.util.ArrayList;
 
 public class ConcreteSubject1 implements Subject{
-	private ArrayList<Observer> observers;
+	private ArrayList observers;
 	
 	public ConcreteSubject1() {
 		// TODO Auto-generated constructor stub
@@ -25,8 +25,8 @@ public class ConcreteSubject1 implements Subject{
 	@Override
 	public void notifyObservers() {
 		// TODO Auto-generated method stub
-		for(Observer observer : observers) {
-			observer.update(this);
+		for(Object observer : observers) {
+			((Observer) observer).update(this);
 		}
 	}
 
