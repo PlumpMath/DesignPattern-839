@@ -2,10 +2,10 @@ package ObserverPattern;
 
 import java.util.ArrayList;
 
-public class ConcreteSubject implements Subject{
+public class ConcreteSubject2 implements Subject{
 	private ArrayList<Observer> observers;
 	
-	public ConcreteSubject() {
+	public ConcreteSubject2() {
 		// TODO Auto-generated constructor stub
 		observers = new ArrayList<>();
 	}
@@ -26,7 +26,7 @@ public class ConcreteSubject implements Subject{
 	public void notifyObservers() {
 		// TODO Auto-generated method stub
 		for(Observer observer : observers) {
-			observer.update();
+			observer.update(this);
 		}
 	}
 
